@@ -8,14 +8,13 @@ import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Data
 @Entity
 @Table(name = "exchange_rates")
-public class ExchangeRates {
+public class ExchangeRatesEntity {
     @Id
     @Column
     private UUID id;
