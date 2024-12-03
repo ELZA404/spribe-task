@@ -25,7 +25,8 @@ dependencies {
 	implementation 'org.postgresql:postgresql'
 	implementation group: 'org.liquibase', name: 'liquibase-core', version: "$liquibaseVersion"
 
-	compileOnly group: 'org.projectlombok', name: 'lombok', version: "$lombokVersion"
+	implementation group: 'org.projectlombok', name: 'lombok', version: "$lombokVersion"
+	annotationProcessor group: 'org.projectlombok', name: 'lombok', version: "$lombokVersion"
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'

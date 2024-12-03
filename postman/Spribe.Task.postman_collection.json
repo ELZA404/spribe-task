@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "5f8342d5-4086-4fb3-b332-a5da25ca51d2",
+		"name": "Spribe.Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9555011"
+	},
+	"item": [
+		{
+			"name": "GET Currency list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/exchange/rates/currency/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"exchange",
+						"rates",
+						"currency",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Currency exchange rate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/exchange/rates/currency/UAH?currency=EUR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"exchange",
+						"rates",
+						"currency",
+						"UAH"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "EUR",
+							"description": "defaults to USD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add currency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/exchange/rates/currency/UAH?currency=EUR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"exchange",
+						"rates",
+						"currency",
+						"UAH"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "EUR",
+							"description": "defaults to USD"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

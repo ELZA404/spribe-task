@@ -13,3 +13,8 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+
+
+scheduler:
+  enabled: true
+  interval: 3600 #seconds
