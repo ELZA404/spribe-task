@@ -1,0 +1,3 @@
+scheduler:
+  enabled: true
+  interval: 5 #seconds
