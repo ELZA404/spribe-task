@@ -64,8 +64,17 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"source\": \"UAH\",\r\n    \"currency\": \"EUR\" //defaults to USD\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/v1/exchange/rates/currency/UAH?currency=EUR",
+					"raw": "http://localhost:8080/v1/exchange/rates/currency",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -75,15 +84,7 @@
 						"v1",
 						"exchange",
 						"rates",
-						"currency",
-						"UAH"
-					],
-					"query": [
-						{
-							"key": "currency",
-							"value": "EUR",
-							"description": "defaults to USD"
-						}
+						"currency"
 					]
 				}
 			},

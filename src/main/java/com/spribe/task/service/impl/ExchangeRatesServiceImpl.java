@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class ExchangeRatesServiceImpl implements ExchangeRatesService {
-    private static final Map<String, BigDecimal> CURRENCY_RATES = new ConcurrentHashMap<>();
+    private final Map<String, BigDecimal> CURRENCY_RATES = new ConcurrentHashMap<>();
 
     @Override
     public BigDecimal getRate(String currency) {
